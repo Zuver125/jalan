@@ -1,0 +1,70 @@
+body {
+    font-family: monospace;
+    background-image: url(https://wallpaperaccess.com/full/3353813.jpg);
+    background-position: top;
+    background-size: 1500px;
+    background-color: #ffe4e1; /* Warna latar belakang lembut */
+    text-align: center;
+    font-size: x-large;
+    padding: 20px;
+    overflow: auto; /* Memungkinkan scroll */
+    position: relative; /* Agar elemen anak dapat diposisikan relatif */
+}
+.hidden {
+    display: none;
+}
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgba(255, 105, 180, 0.7); /* Warna latar belakang dengan transparansi */
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 1000px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; /* Mencegah isi tombol melampaui batas */
+}
+button:hover {
+    background-color: rgba(255, 20, 147, 0.8); /* Warna tombol saat hover */
+}
+
+/* Gaya untuk gambar wisata */
+#wisata-image {
+    display: block; /* Mengatur gambar sebagai block element */
+    margin: 20px auto; /* Menempatkan gambar di tengah */
+    max-width: 80%; /* Mengatur lebar maksimum gambar */
+    height: auto; /* Menjaga rasio aspek gambar */
+}
+
+/* Gaya untuk elemen audio */
+.audio-container {
+    margin-top: 20px; /* Memberikan jarak di atas elemen audio */
+    background-color: purple; /* Mengatur warna latar belakang menjadi ungu */
+    padding: 10px; /* Memberikan padding di sekitar elemen audio */
+    border-radius: 5px; /* Sudut melengkung untuk kontainer audio */
+    display: inline-block; /* Agar lebar kontainer sesuai dengan konten */
+}
+
+iframe {
+    width: 60%; /* Mengatur lebar iframe */
+    height: 90px; /* Tinggi iframe, sesuaikan jika diperlukan */
+    border: none; /* Menghilangkan border */
+}
+.flower {
+    position: fixed; /* Menggunakan fixed agar tidak mempengaruhi layout */
+    width: 50px; /* Ukuran bunga */
+    animation: fall 5s linear forwards; /* Animasi jatuh */
+    pointer-events: none; /* Membuat bunga tidak menghalangi interaksi */
+}
+
+@keyframes fall {
+    0% {
+        top: -10%;
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
